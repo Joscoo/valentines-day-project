@@ -1,0 +1,103 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.flower-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.flower {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    animation: spin 4s linear infinite;
+}
+
+.petal {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #ff6699;
+    border-radius: 50%;
+}
+
+.petal:nth-child(1) {
+    top: 0;
+    left: 25px;
+}
+
+.petal:nth-child(2) {
+    top: 25px;
+    left: 0;
+}
+
+.petal:nth-child(3) {
+    top: 25px;
+    left: 50px;
+}
+
+.petal:nth-child(4) {
+    top: 50px;
+    left: 25px;
+}
+
+.center {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffee00;
+    border-radius: 50%;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#surpriseBtn {
+    background-color: #ff3366;
+    border: none;
+}
+
+#surpriseBtn:hover {
+    background-color: #ff6699;
+}
